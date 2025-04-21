@@ -25,7 +25,7 @@ public final class LogicaCuenta {
 
     public synchronized boolean AgregarSaldo(int numCuenta, double monto){
         boolean temp = false;
-        Cuenta cuenta = listaCuentas.get(numCuenta);
+        Cuenta cuenta = listaCuentas.get(numCuenta);        //Identifica que tipo de cuenta es
             if(cuenta instanceof CuentaCorriente){
                 temp = ((CuentaCorriente) cuenta).agregarSaldo(monto);
             }else {
