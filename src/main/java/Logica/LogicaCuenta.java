@@ -70,12 +70,14 @@ public final class LogicaCuenta {
         return temp;
     }
 
-    public void CrearCuentaCorriente(){
+    public void CrearCuentaCorriente(double saldoIncial){
         CuentaCorriente cuenta = new CuentaCorriente();
+        cuenta.agregarSaldo(saldoIncial);
         listaCuentas.add(cuenta);
     }
-    public void CrearCajaAhorro(){
+    public void CrearCajaAhorro(double saldoInicial){
         CajaAhorro cuenta = new CajaAhorro();
+        cuenta.agregarSaldo(saldoInicial);
         listaCuentas.add(cuenta);
     }
 }

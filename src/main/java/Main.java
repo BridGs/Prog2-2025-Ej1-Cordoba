@@ -15,9 +15,9 @@ public class Main {
 
         for(int i = 0; i < 10; i++){
             if(!(random.nextBoolean())){
-                logicaCuenta.CrearCuentaCorriente();
+                logicaCuenta.CrearCuentaCorriente(random.nextDouble());
             }else{
-                logicaCuenta.CrearCajaAhorro();
+                logicaCuenta.CrearCajaAhorro(random.nextDouble());
             }
         }
         //Iteracion concurrente que modifica el saldo de las cuentas creadas anteriormente
